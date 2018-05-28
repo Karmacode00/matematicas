@@ -1,27 +1,31 @@
 window.onload = alert('36325 * (9824 + 777)');
 
-// Variables
-let num1 = 777;
-let num2 = 9824;
+function add(num1, num2){
+    return num1 + num2;
+ }
+ 
+ function multiply(num1, num2){
+    return num1 * num2;
+ }
+ 
+ var resultado1 = add(9824,777);
+ var resultadoFinal = multiply(resultado1,36325);
+ 
+ console.log(resultadoFinal);
 
 
-// Función
-function add() {
-  return num1 + num2;
-}
+/* Función dentro de otra, algo no funciona...
 
-add(); // Retorna resultado
 
-// Sería una función anidada
-function result () {
-  let num3 = 36325,
-     
-  
-function multiply() {
-    return add * num3;
-  }
-  
-  multiply();
-}
-
-resultadoFinal(); 
+function add(numero1, numero2){
+    return numero1 + numero2;
+ }
+ 
+ function multiply(numero1, numero2){
+    return numero1 * numero2;
+ }
+ 
+ var resultado1 = add(9824,777);
+ var resultadoFinal = multiply(resultado1,36325);
+ 
+ console.log(resultadoFinal); */
